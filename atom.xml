@@ -173,13 +173,13 @@
     
       <category term="小学" scheme="http://izhen.me/tags/%E5%B0%8F%E5%AD%A6/"/>
     
+      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
+    
       <category term="兴趣小组" scheme="http://izhen.me/tags/%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84/"/>
     
       <category term="中学" scheme="http://izhen.me/tags/%E4%B8%AD%E5%AD%A6/"/>
     
       <category term="大学" scheme="http://izhen.me/tags/%E5%A4%A7%E5%AD%A6/"/>
-    
-      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -204,8 +204,6 @@
     
       <category term="C++" scheme="http://izhen.me/tags/C/"/>
     
-      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
-    
       <category term="Basic" scheme="http://izhen.me/tags/Basic/"/>
     
       <category term="Pascal" scheme="http://izhen.me/tags/Pascal/"/>
@@ -213,6 +211,8 @@
       <category term="物理" scheme="http://izhen.me/tags/%E7%89%A9%E7%90%86/"/>
     
       <category term="VB" scheme="http://izhen.me/tags/VB/"/>
+    
+      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -915,9 +915,9 @@
     <link href="http://izhen.me/2015/12/20/2015-12-20-app-goodbey/"/>
     <id>http://izhen.me/2015/12/20/2015-12-20-app-goodbey/</id>
     <published>2015-12-20T12:24:39.000Z</published>
-    <updated>2016-08-14T01:51:05.000Z</updated>
+    <updated>2020-01-13T12:04:29.259Z</updated>
     
-    <content type="html"><![CDATA[<p>工欲善其事，必先利其器。以前发过一篇文章是说 <a href="http://izhen.me/2014/03/07/2014-03-07-my-mac-software-list/">MAC OS X 常用软件分享</a> 。这里要说说变动的一些APP，这其中既有主动弃掉，也有依依不舍但是没办法被动扔掉的，还有新加入的。最近因为没什么闲功夫整理技术文章，总发技术博文也略显失趣，所以就闲聊下好了。<br><a id="more"></a></p><h3 id="抛弃列表"><a href="#抛弃列表" class="headerlink" title="抛弃列表"></a>抛弃列表</h3><h4 id="主动抛弃"><a href="#主动抛弃" class="headerlink" title="主动抛弃"></a>主动抛弃</h4><ol><li><a href="http://macromates.com/" target="_blank" rel="noopener">TextMate</a> The Missing Editor for Mac OS X，装上就没怎么用过。</li><li>用 <a href="http://brew.sh/" target="_blank" rel="noopener">Homebrew</a> 安装的一堆没用的依赖。</li><li><a href="http://www.sublimetext.com/" target="_blank" rel="noopener">Sublime</a> 被 <a href="https://atom.io" target="_blank" rel="noopener">Atom</a> 替代了。并不是<code>ST</code>不够好，其实<code>Atom</code>在效率上还是有待改进的，毕竟其工作原理是V8托着Node.js，就像浏览器上跑着WEB应用，不同的是本地运行，没有网络延迟。效率这一点目前还比不过<code>ST</code>，但是感觉社区够好，而且我装一堆文本编辑器（我还有Vim和Emacs，没错我双党XD）没必要，个人不太喜欢在这个方面冗余，卸之。</li><li><a href="http://www.videolan.org/vlc/index.html" target="_blank" rel="noopener">VLC</a> 用的少。</li><li><a href="http://adium.im" target="_blank" rel="noopener">Adium</a> 用 <a href="https://weechat.org" target="_blank" rel="noopener">Weechat</a> 替代了。</li></ol><h4 id="被动抛弃"><a href="#被动抛弃" class="headerlink" title="被动抛弃"></a>被动抛弃</h4><ol><li><a href="http://mouapp.com/" target="_blank" rel="noopener">Mou</a> 所见即所得 Markdown 编辑器，不知道为什么就坑了。替代者 <a href="http://www.mweb.im" target="_blank" rel="noopener">MWeb</a></li><li><a href="http://sparrowmailapp.com/" target="_blank" rel="noopener">Sparrow</a> 因为停止更新了，目前用<code>OS X</code>自带的。</li></ol><h3 id="新丁"><a href="#新丁" class="headerlink" title="新丁"></a>新丁</h3><p>除了上面提到的，还有：</p><ol><li><a href="https://minecraft.net" target="_blank" rel="noopener">Minecraft</a> 神作，必须入。我不把<code>MC</code>单纯看做游戏。</li><li><a href="https://smilesoftware.com/pdfpenpro" target="_blank" rel="noopener">PDFpenPro</a> 非常强大的PDF阅读、标注工具。</li><li><a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a> 用了就知道。</li><li><a href="https://agilebits.com/onepassword" target="_blank" rel="noopener">1Password</a> 好东西，推荐。</li><li><a href="https://www.techsmith.com" target="_blank" rel="noopener">TechSmith</a> 的两个录制屏幕的应用。</li></ol><h3 id="使用上的变动"><a href="#使用上的变动" class="headerlink" title="使用上的变动"></a>使用上的变动</h3><ol><li><code>Vim/Emacs</code> : 我用这个最强大的文本编辑器和这个编辑器中的操作系统的时候与以前比产生了一定的变化。以前我写<code>C/C++</code>都是开着<code>Vim</code>写，现在对于小程序仍然可以这么做，但是面对大的项目确实有一定的局限，除非你的配置文件异常出色。但是将大把精力投入在配置文件上并不总是值得推崇的。现在，一个超级强大的<code>Emacs</code>配置文件动辄上千行，然而和你单纯的写程序不一样，寻找、比较、调试配置文件更加消耗精力，你可以把时间用在更值得的地方。我现在的态度就是，学习一门新的编程语言用<code>Vim/Emacs</code>足够，因为过于强大的<code>IDE</code>在我入门时给出的<em>丰富的指示</em>反而不利于初学者思考。</li><li>以前我不太常用<code>IDE</code>，除了写<code>Java</code>用过<code>Eclipse</code>。现在，我在已经入门一个语言后，开始做项目时会选择一个<em>真正理解</em>程序语言的<code>IDE</code>。比如<code>Java</code>系的编程语言选择 <a href="http://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrians</a> 的产品，<code>C/C++</code>选择<code>VS</code>系，而对于某些缺乏优秀<code>IDE</code>的函数式语言，目前只能用配置过的编辑器了，期待有朝一日，涌现大量的成熟的函数式语言的IDE(比如<code>F#</code>)。</li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>铁打的生态环境，流水的APP，时常会更新一些，删掉一些，加入一些。</p>]]></content>
+    <content type="html"><![CDATA[<p>工欲善其事，必先利其器。以前发过一篇文章是说 <a href="http://izhen.me/2014/03/07/2014-03-07-my-mac-software-list/">MAC OS X 常用软件分享</a> 。这里要说说变动的一些APP，这其中既有主动弃掉，也有依依不舍但是没办法被动扔掉的，还有新加入的。最近因为没什么闲功夫整理技术文章，总发技术博文也略显失趣，所以就闲聊下好了。<br><a id="more"></a></p><h3 id="抛弃列表"><a href="#抛弃列表" class="headerlink" title="抛弃列表"></a>抛弃列表</h3><h4 id="主动抛弃"><a href="#主动抛弃" class="headerlink" title="主动抛弃"></a>主动抛弃</h4><ol><li><a href="http://macromates.com/" target="_blank" rel="noopener">TextMate</a> The Missing Editor for Mac OS X，装上就没怎么用过。</li><li>用 <a href="http://brew.sh/" target="_blank" rel="noopener">Homebrew</a> 安装的一堆没用的依赖。</li><li><a href="http://www.sublimetext.com/" target="_blank" rel="noopener">Sublime</a> 被 <a href="https://atom.io" target="_blank" rel="noopener">Atom</a> 替代了。并不是<code>ST</code>不够好，其实<code>Atom</code>在效率上还是有待改进的，毕竟其工作原理是V8托着Node.js，就像浏览器上跑着WEB应用，不同的是本地运行，没有网络延迟。效率这一点目前还比不过<code>ST</code>，但是感觉社区够好，而且我装一堆文本编辑器（我还有Vim和Emacs，没错我双党XD）没必要，个人不太喜欢在这个方面冗余，卸之。</li><li><a href="http://www.videolan.org/vlc/index.html" target="_blank" rel="noopener">VLC</a> 用的少。</li><li><a href="http://adium.im" target="_blank" rel="noopener">Adium</a> 用 <a href="https://weechat.org" target="_blank" rel="noopener">Weechat</a> 替代了。</li></ol><h4 id="被动抛弃"><a href="#被动抛弃" class="headerlink" title="被动抛弃"></a>被动抛弃</h4><ol><li><a href="http://mouapp.com/" target="_blank" rel="noopener">Mou</a> 所见即所得 Markdown 编辑器，不知道为什么就坑了。替代者 <a href="http://www.mweb.im" target="_blank" rel="noopener">MWeb</a></li><li><a href="http://sparrowmailapp.com/" target="_blank" rel="noopener">Sparrow</a> 因为停止更新了，目前用<code>OS X</code>自带的。</li></ol><h3 id="新丁"><a href="#新丁" class="headerlink" title="新丁"></a>新丁</h3><p>除了上面提到的，还有：</p><ol><li><a href="https://minecraft.net" target="_blank" rel="noopener">Minecraft</a> 神作，必须入。我不把<code>MC</code>单纯看做游戏。</li><li><a href="https://smilesoftware.com/pdfpenpro" target="_blank" rel="noopener">PDFpenPro</a> 非常强大的PDF阅读、标注工具。</li><li><a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a> 用了就知道。</li><li><a href="https://agilebits.com/onepassword" target="_blank" rel="noopener">1Password</a> 好东西，推荐。</li><li><del><a href="https://www.techsmith.com" target="_blank" rel="noopener">TechSmith</a> 的两个录制屏幕的应用</del></li><li><a href="">Setapp</a> 最好到租用软件平台。</li><li><a href="">Final Cut Pro X</a> 最棒到剪辑软件。</li><li><a href="">Photoshop</a> 修图利器</li><li><a href="">Affinity Photo</a> PS替代者</li><li><a href="">Lightroom</a> 照片调色行业标准</li><li><a href="">DaVinci</a> 视频调色行业标准</li><li><a href="">Sketch</a> APP原型工具</li><li><a href="">Origami Studio</a> Facebook推出到原型工具</li><li><a href="">Adobe XD</a> A家原型工具</li><li><a href="">Logic Pro X</a> 强化版库乐队</li><li><a href="">Capture One for Sony</a> 飞思出品到照片编辑工具</li><li><a href="">Folx</a> Mac上的迅雷</li><li><a href="">Sony Imaging</a> Sony自家照片编辑三件套</li><li><a href="">Drafts</a> 备忘录替代品</li><li><a href="">Day One</a> 日记软件</li><li><a href="">VMware Fusion</a> 比PD干净，更稳定到老牌虚拟机软件</li><li><a href="">Transimit</a> 新一代FTP工具，可以SSH</li></ol><h3 id="使用上的变动"><a href="#使用上的变动" class="headerlink" title="使用上的变动"></a>使用上的变动</h3><ol><li><code>Vim/Emacs</code> : 我用这个最强大的文本编辑器和这个编辑器中的操作系统的时候与以前比产生了一定的变化。以前我写<code>C/C++</code>都是开着<code>Vim</code>写，现在对于小程序仍然可以这么做，但是面对大的项目确实有一定的局限，除非你的配置文件异常出色。但是将大把精力投入在配置文件上并不总是值得推崇的。现在，一个超级强大的<code>Emacs</code>配置文件动辄上千行，然而和你单纯的写程序不一样，寻找、比较、调试配置文件更加消耗精力，你可以把时间用在更值得的地方。我现在的态度就是，学习一门新的编程语言用<code>Vim/Emacs</code>足够，因为过于强大的<code>IDE</code>在我入门时给出的<em>丰富的指示</em>反而不利于初学者思考。</li><li>以前我不太常用<code>IDE</code>，除了写<code>Java</code>用过<code>Eclipse</code>。现在，我在已经入门一个语言后，开始做项目时会选择一个<em>真正理解</em>程序语言的<code>IDE</code>。比如<code>Java</code>系的编程语言选择 <a href="http://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrians</a> 的产品，<code>C/C++</code>选择<code>VS</code>系，而对于某些缺乏优秀<code>IDE</code>的函数式语言，目前只能用配置过的编辑器了，期待有朝一日，涌现大量的成熟的函数式语言的IDE(比如<code>F#</code>)。</li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>铁打的生态环境，流水的APP，时常会更新一些，删掉一些，加入一些。</p>]]></content>
     
     <summary type="html">
     
