@@ -73,6 +73,104 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-noi2007" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/01/04/noi2007/" class="article-date">
+  <time datetime="2010-01-03T21:38:37.000Z" itemprop="datePublished">2010-01-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/01/04/noi2007/">NOI2004郁闷的出纳员</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这是一道考察数据结构的题目，理论上使用静态的会更好，不见得动态的就快，但是我是使用Treap AC的。原理很简单，就是需要额外再用一个delta来记录差量，避免Treap退化，所以在加入一个节点时 ，要减去这个差量，最后输出时加上即可。然后’S’、’A’操作只改变delta，剩下的就是实现了。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/01/04/noi2007/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://izhen.me/2010/01/04/noi2007/" data-id="ck5th6uu00021x9jrjcwjyhix" class="article-share-link">Share</a>
+      
+        <a href="http://izhen.me/2010/01/04/noi2007/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Treap/">Treap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/平衡树/">平衡树</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-usaco_243" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/01/01/usaco_243/" class="article-date">
+  <time datetime="2010-01-01T15:39:27.000Z" itemprop="datePublished">2010-01-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/01/01/usaco_243/">USACO 2.3.3 Cowtour</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这道题目是图论问题，首先用floyd求出每对点的最短路，然后再找出单独每个点的可连接的最远的点(直径)，接下来就是计算两个分离牧区的直径。首先遍历所有不连通的点对，然后用这两点的距离加上两点原来的直径。如果更小，则更新直到结束。<br>但是还有一种特殊情况：“包含”。如果一个牧场恰好包含另一个，且大的牧场直径比计算出的要长一些，则结果应该是更大的那个才对。(参考图片：红色表示最终连接的结果，蓝色表示大牧场的直径，显然蓝色的才正确)</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/01/01/usaco_243/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://izhen.me/2010/01/01/usaco_243/" data-id="ck5th6uu9002kx9jrig8efan9" class="article-share-link">Share</a>
+      
+        <a href="http://izhen.me/2010/01/01/usaco_243/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Floyd/">Floyd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Graph/">Graph</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-noip2001" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2010/01/01/noip2001/" class="article-date">
@@ -109,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2010/01/01/noip2001/" data-id="ck5cegziy0023c8jrpfito3xa" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2010/01/01/noip2001/" data-id="ck5th6uu10022x9jrjh1b0jki" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2010/01/01/noip2001/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -161,7 +259,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/11/09/CSAPC09/" data-id="ck5cegzi2000ic8jrq46g488d" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/11/09/CSAPC09/" data-id="ck5th6ut9000ix9jrviie9wpq" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/11/09/CSAPC09/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -211,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/08/04/ZEWII/" data-id="ck5cegzib0010c8jrpgpmen5o" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/08/04/ZEWII/" data-id="ck5th6utj0013x9jrlghx2pcn" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/08/04/ZEWII/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -260,7 +358,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/05/04/KUBUNTU/" data-id="ck5cegzi3000jc8jrmk3ukfy5" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/05/04/KUBUNTU/" data-id="ck5th6ut8000gx9jr5a1mhqvs" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/05/04/KUBUNTU/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -309,7 +407,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/27/usaco_234/" data-id="ck5cegzj5002lc8jr8uhrnuyg" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/04/27/usaco_234/" data-id="ck5th6uu9002lx9jrgnvcxu15" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/04/27/usaco_234/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -358,7 +456,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/26/usaco_235/" data-id="ck5cegzj5002mc8jrwf2h5gz4" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/04/26/usaco_235/" data-id="ck5th6uua002mx9jr3fj96od6" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/04/26/usaco_235/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -407,7 +505,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/24/usaco_233/" data-id="ck5cegzj5002kc8jrnyqlwfpj" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/04/24/usaco_233/" data-id="ck5th6uu8002jx9jrfnijd719" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/04/24/usaco_233/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -456,107 +554,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/24/usaco_231/" data-id="ck5cegzj4002jc8jrcn93ut11" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2009/04/24/usaco_231/" data-id="ck5th6uu8002ix9jr2mthf1of" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2009/04/24/usaco_231/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pascal/">Pascal</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/String-Pattern-Match/">String Pattern Match</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Trie/">Trie</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-philosophy" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2009/04/19/philosophy/" class="article-date">
-  <time datetime="2009-04-18T16:12:53.000Z" itemprop="datePublished">2009-04-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blog/">Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2009/04/19/philosophy/">哲理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>以下是我业余时(中考前，2008年)写下的,先贴一小部分,并不都是我写的,有的是总结的:</p>
-        
-          <p class="article-more-link">
-            <a href="/2009/04/19/philosophy/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/19/philosophy/" data-id="ck5cegzj00029c8jr5nbuu60k" class="article-share-link">Share</a>
-      
-        <a href="http://izhen.me/2009/04/19/philosophy/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2008/">2008</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/">OI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/中考/">中考</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-first_province_team" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2009/04/11/first_province_team/" class="article-date">
-  <time datetime="2009-04-11T04:10:10.000Z" itemprop="datePublished">2009-04-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blog/">Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2009/04/11/first_province_team/">理念</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>天行键，君子以自强不息；地势坤，君子以厚德载物!</p>
-<p>马上就要有大的挑战，学习功课闲暇时还要抽时间刷题，刷题闲暇时还要玩游戏，玩游戏闲暇时还要努力睡觉，睡觉闲暇时还要发博，厄……连锁的链式反应就是可怕，没办法，好多事其实是一件事，慢慢做，不怕做不完</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://izhen.me/2009/04/11/first_province_team/" data-id="ck5cegzij001fc8jrqttpjbun" class="article-share-link">Share</a>
-      
-        <a href="http://izhen.me/2009/04/11/first_province_team/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/">OI</a></li></ul>
 
     </footer>
   </div>
