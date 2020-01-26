@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Z.Y. ☯ Cosmos">
 <meta property="og:description" content="工程师与程序录入员的区别就是工程师不仅仅只做编码工作。当然编码是最基础的，除此外还有诸如部署、Support、解决方案提供等「杂活」。曾经我觉得除了编码都是不务正业浪费时间，现在我开始慢慢的去改变这一观点并慢慢去做好很多细节。举个例子，我刚来工作的时候，连Eclipse也用不好，毕竟学生时代用Vim什么的就足够了。 我在刚刚工作时一直希望能够得到一篇弥补象牙塔与真正工业界之间GAP的指导，奈何都不">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-26T11:35:31.517Z">
+<meta property="og:updated_time" content="2020-01-26T11:57:08.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作3年会遇到什么技术">
 <meta name="twitter:description" content="工程师与程序录入员的区别就是工程师不仅仅只做编码工作。当然编码是最基础的，除此外还有诸如部署、Support、解决方案提供等「杂活」。曾经我觉得除了编码都是不务正业浪费时间，现在我开始慢慢的去改变这一观点并慢慢去做好很多细节。举个例子，我刚来工作的时候，连Eclipse也用不好，毕竟学生时代用Vim什么的就足够了。 我在刚刚工作时一直希望能够得到一篇弥补象牙塔与真正工业界之间GAP的指导，奈何都不">
@@ -243,7 +243,7 @@
 </ul>
 </li>
 <li>Abstract Factory模式:<ul>
-<li>意图：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。</li>
+<li>意图：提供一个创建一系列相关或相互依赖对象的<strong>接口</strong>，而无需指定它们具体的类。</li>
 <li>适用性：<ul>
 <li>一个系统要独立于它的产品的创建、组合和表示时</li>
 <li>一个系统要由多个产品系列中的一个来配置时</li>
@@ -264,7 +264,7 @@
 </ul>
 </li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">T factory = (T) Proxy.newProxyInstanc</span><br><span class="line">    (ClassUtil.getDefaultClassLoader(),</span><br><span class="line">    <span class="keyword">new</span> Class[] &#123; factoryInterface &#125;,  <span class="comment">//Class&lt;T&gt; factoryInterface</span></span><br><span class="line">    <span class="keyword">new</span> InvocationHandler());</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * FactoryInvocationHandler中要实现 InvocationHandler，最重要的就是设定</span></span><br><span class="line"><span class="comment"> * getXxxService()的invoke模式。InvocationHandler实现invoke方法，主要是具体的代理过程</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">T factory = (T) Proxy.newProxyInstanc</span><br><span class="line">    (ClassUtil.getDefaultClassLoader(),</span><br><span class="line">    <span class="keyword">new</span> Class[] &#123; factoryInterface &#125;,  <span class="comment">//Class&lt;T&gt; factoryInterface</span></span><br><span class="line">    <span class="keyword">new</span> InvocationHandler());</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * FactoryInvocationHandler中要实现 InvocationHandler，最重要的就是设定</span></span><br><span class="line"><span class="comment"> * getXxxService()的invoke模式。InvocationHandler实现invoke方法，主要是具体的代理过程</span></span><br><span class="line"><span class="comment"> * 比如Factory Method的具体代理操作</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 <p>动态代理是一种设计模式，主要用来解决任务分派（对象加载）问题，Java自身支持这种机制，使用反射实现。AOP可以用动态代理实现。</p>
 <h4 id="Class加载顺序"><a href="#Class加载顺序" class="headerlink" title="Class加载顺序"></a>Class加载顺序</h4><ol>
 <li>Bootstrap Class Loader: 根，C++实现。JVM启动时 $JAVA_HOME中JRE所有的class</li>
@@ -313,7 +313,7 @@
 <li>论文、官方接口文档、Mailing list。多看一手资料</li>
 <li>C++项目的环境一般都是本地编译并本地执行，部署方式不同于Web项目</li>
 </ol>
-<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><p>这里能说的要说多非常多，因为编译器的规模都巨大，也需要大量<strong>造轮子</strong>。但是呢要说少也少，因为很多技术太过于专了，说不说也罢。</p>
+<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><p>这里能说的要说多非常多，因为编译器的规模都巨大，也需要大量<strong>造轮子</strong>。但是呢要说少也少，因为很多技术太过于专了，说不说也罢。主要工作语言从Java转到了C++，从API工程师变成了从零开始徒手撸。</p>
 <ol>
 <li>设计模式与Web项目会有很大不同，这里访问者模式、建造者模式更常用</li>
 <li>因为属于Infrastructure领域，很多<a href="https://izhen.me/2019/04/22/invoke-dynamic/">特性</a>是从零自主实现的，没有现成的第三方类库。实现一个新的特性就是从原始论文翻译成代码的。项目已经<a href="https://www.openarkcompiler.cn/home" target="_blank" rel="noopener">开源</a>了，可以去下载来看看</li>
@@ -332,7 +332,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2020/01/25/junior_engineer/" data-id="ck5uy6j9s001ovxjrvlhtfcbx" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2020/01/25/junior_engineer/" data-id="ck5uyxsvx001ne7jrxr36t7zd" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2020/01/25/junior_engineer/#disqus_thread" class="article-comment-link">Comments</a>
       
