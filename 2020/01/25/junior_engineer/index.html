@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Z.Y. ☯ Cosmos">
 <meta property="og:description" content="工程师与程序录入员的区别就是工程师不仅仅只做编码工作。当然编码是最基础的，除此外还有诸如部署、Support、解决方案提供等「杂活」。曾经我觉得除了编码都是不务正业浪费时间，现在我开始慢慢的去改变这一观点并慢慢去做好很多细节。举个例子，我刚来工作的时候，连Eclipse也用不好，毕竟学生时代用Vim什么的就足够了。 我在刚刚工作时一直希望能够得到一篇弥补象牙塔与真正工业界之间GAP的指导，奈何都不">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-26T04:55:36.717Z">
+<meta property="og:updated_time" content="2020-01-26T11:35:31.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作3年会遇到什么技术">
 <meta name="twitter:description" content="工程师与程序录入员的区别就是工程师不仅仅只做编码工作。当然编码是最基础的，除此外还有诸如部署、Support、解决方案提供等「杂活」。曾经我觉得除了编码都是不务正业浪费时间，现在我开始慢慢的去改变这一观点并慢慢去做好很多细节。举个例子，我刚来工作的时候，连Eclipse也用不好，毕竟学生时代用Vim什么的就足够了。 我在刚刚工作时一直希望能够得到一篇弥补象牙塔与真正工业界之间GAP的指导，奈何都不">
@@ -264,8 +264,8 @@
 </ul>
 </li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">T factory = (T) Proxy.newProxyInstanc</span><br><span class="line">    (ClassUtil.getDefaultClassLoader(),</span><br><span class="line">    <span class="keyword">new</span> Class[] &#123; factoryInterface &#125;,  <span class="comment">//Class&lt;T&gt; factoryInterface</span></span><br><span class="line">    <span class="keyword">new</span> FactoryInvocationHandler());</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * FactoryInvocationHandler中要实现 InvocationHandler，最重要的就是设定</span></span><br><span class="line"><span class="comment"> * getXxxService()的invoke模式。invoke主要是指定FactoryMethod的创建方式</span></span><br><span class="line"><span class="comment"> * 比如使用SpringContextHolder.getBean(xxx)</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-<p>动态代理是一种设计模式，主要用来解决任务分派（对象加载）问题，Java自身支持这种机制，使用反射实现。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">T factory = (T) Proxy.newProxyInstanc</span><br><span class="line">    (ClassUtil.getDefaultClassLoader(),</span><br><span class="line">    <span class="keyword">new</span> Class[] &#123; factoryInterface &#125;,  <span class="comment">//Class&lt;T&gt; factoryInterface</span></span><br><span class="line">    <span class="keyword">new</span> InvocationHandler());</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * FactoryInvocationHandler中要实现 InvocationHandler，最重要的就是设定</span></span><br><span class="line"><span class="comment"> * getXxxService()的invoke模式。InvocationHandler实现invoke方法，主要是具体的代理过程</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+<p>动态代理是一种设计模式，主要用来解决任务分派（对象加载）问题，Java自身支持这种机制，使用反射实现。AOP可以用动态代理实现。</p>
 <h4 id="Class加载顺序"><a href="#Class加载顺序" class="headerlink" title="Class加载顺序"></a>Class加载顺序</h4><ol>
 <li>Bootstrap Class Loader: 根，C++实现。JVM启动时 $JAVA_HOME中JRE所有的class</li>
 <li>Extension Class Loader: 加载一些扩展功能</li>
@@ -323,6 +323,8 @@
 <li>Citi的技术分享更多的是员工自己分享经验，能在工程细节上得到不错的启发；在华为更多请行业专家和教授讲解学术性的内容，离工程细节远</li>
 <li>对比Web开发，能感觉到在国内这个领域远不如Web开发成熟。相当的内容都是摸着石头过河，没有特别繁琐的框架规则，都是直击问题要害，也容易造成代码不讲究，到处乱飞的现象，不知道是工作领域的原因还是国内外公司的差异。感觉代码的正规化不如上一家公司，但是技术含量要高很多</li>
 <li>前中后端、解释器、Runtime之间的技术差异很大。当前我是在前端工作，对于语法、类型分析和IR的接触较多，对于垃圾回收、优化和后端的接触较少</li>
+<li>闭包、lambda、匿名内部类的概念会有运用；Java 8中含有Single Abstract Method的lambda语法糖</li>
+<li>Java 8之后，引入Stream API，list comprehension实现在stream抽象内</li>
 <li>工作涉密，不方便在公共场所交流细节</li>
 <li>编译器高手 == 字符串拼接大师（哈哈，开个玩笑）</li>
 </ol>
@@ -330,7 +332,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://izhen.me/2020/01/25/junior_engineer/" data-id="ck5uiju6n001m8cjr240vlpvb" class="article-share-link">Share</a>
+      <a data-url="http://izhen.me/2020/01/25/junior_engineer/" data-id="ck5uy6j9s001ovxjrvlhtfcbx" class="article-share-link">Share</a>
       
         <a href="http://izhen.me/2020/01/25/junior_engineer/#disqus_thread" class="article-comment-link">Comments</a>
       
