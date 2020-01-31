@@ -238,13 +238,13 @@
     
       <category term="小学" scheme="http://izhen.me/tags/%E5%B0%8F%E5%AD%A6/"/>
     
+      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
+    
       <category term="兴趣小组" scheme="http://izhen.me/tags/%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84/"/>
     
       <category term="中学" scheme="http://izhen.me/tags/%E4%B8%AD%E5%AD%A6/"/>
     
       <category term="大学" scheme="http://izhen.me/tags/%E5%A4%A7%E5%AD%A6/"/>
-    
-      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -269,8 +269,6 @@
     
       <category term="C++" scheme="http://izhen.me/tags/C/"/>
     
-      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
-    
       <category term="Basic" scheme="http://izhen.me/tags/Basic/"/>
     
       <category term="Pascal" scheme="http://izhen.me/tags/Pascal/"/>
@@ -278,6 +276,8 @@
       <category term="物理" scheme="http://izhen.me/tags/%E7%89%A9%E7%90%86/"/>
     
       <category term="VB" scheme="http://izhen.me/tags/VB/"/>
+    
+      <category term="游戏" scheme="http://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
