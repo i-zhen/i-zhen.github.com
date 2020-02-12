@@ -73,6 +73,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-usaco_314" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/01/usaco_314/" class="article-date">
+  <time datetime="2010-02-01T15:39:27.000Z" itemprop="datePublished">2010-02-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/01/usaco_314/">USACO 3.1.4 Rect1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>刚一读题，第一反应就是朴素染色，但是因为较大的数据，染色法绝对行不通。因为我们没有必要重复覆盖某个点，包括计算面积我们不需要统计，而是直接用坐标计算。所以可以考虑使用面向矩形整体的方法：</p>
+<ol>
+<li>二维线段树或者离散化 + 线段树：这种方法的弊端是要么过于复杂，要么MLE，所以牛刀还是用来屠牛吧</li>
+<li>我具体论述一下矩形切割：首先通过分析我们知道凡是在后面覆盖过的绝对不会被前面的覆盖，因此假设我们覆盖第N个矩形，那么第(N-1)个一定在它的下面，由此知道要倒序染色(1)，这样可以省去很多的操作；而两个矩形相交如何处理呢？我们知道：如果两个矩形相交，他们的交集必定是一个矩形，记录一个矩形只需两个对角坐标，处理方便，所以我们要对每次的覆盖进行切割(2)；</li>
+</ol>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/01/usaco_314/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/01/usaco_314/" data-id="ck6jbnk2d002nc9jr4pw8j1ut" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/01/usaco_314/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/矩形切割/">矩形切割</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-noi2007" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2010/01/04/noi2007/" class="article-date">
@@ -108,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/01/04/noi2007/" data-id="ck63p1kv0001zubjrxpuk1h5y" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/01/04/noi2007/" data-id="ck6jbnk200020c9jro2qgzs3a" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/01/04/noi2007/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -157,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/01/01/usaco_243/" data-id="ck63p1kva002lubjr46enx7p5" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/01/01/usaco_243/" data-id="ck6jbnk2d002mc9jr1qt0x46b" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/01/01/usaco_243/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -207,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/01/01/noip2001/" data-id="ck63p1kv10021ubjrll5brtel" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/01/01/noip2001/" data-id="ck6jbnk220023c9jrof8ltj85" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/01/01/noip2001/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -259,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/11/09/CSAPC09/" data-id="ck63p1ku9000fubjrk9auk1vv" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/11/09/CSAPC09/" data-id="ck6jbnk0z000gc9jrv0958lv0" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/11/09/CSAPC09/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -309,7 +362,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/08/04/ZEWII/" data-id="ck63p1kui000vubjrx7nbfrfg" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/08/04/ZEWII/" data-id="ck6jbnk19000uc9jryyobxx8d" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/08/04/ZEWII/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -358,7 +411,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/05/04/KUBUNTU/" data-id="ck63p1kua000gubjrfb8l4npk" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/05/04/KUBUNTU/" data-id="ck6jbnk0w000ec9jrd2i3nsq8" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/05/04/KUBUNTU/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -407,7 +460,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/04/27/usaco_234/" data-id="ck63p1kv9002jubjre7wkfxq6" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/04/27/usaco_234/" data-id="ck6jbnk2a002ic9jrdlycfys9" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/04/27/usaco_234/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -456,7 +509,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/04/26/usaco_235/" data-id="ck63p1kva002kubjrvf5prk8e" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/04/26/usaco_235/" data-id="ck6jbnk2c002lc9jrjsa6i20q" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/04/26/usaco_235/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -505,61 +558,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/04/24/usaco_233/" data-id="ck63p1kv9002iubjrenyub1zt" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2009/04/24/usaco_233/" data-id="ck6jbnk2c002kc9jrbf1h56op" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2009/04/24/usaco_233/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DFS/">DFS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pascal/">Pascal</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-usaco_231" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2009/04/24/usaco_231/" class="article-date">
-  <time datetime="2009-04-23T16:19:58.000Z" itemprop="datePublished">2009-04-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Solve/">Solve</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2009/04/24/usaco_231/">USACO 2.3.1 Prefix</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这个程序是有史以来我编得最认真的usaco题目，虽然这个程序很慢，甚至在主程序部分使用了一点歪招？！但是这是使用递归思想的，非指针的Trie!没有优化，所以在贴上这个程序后，再贴一个正规一点的。</p>
-        
-          <p class="article-more-link">
-            <a href="/2009/04/24/usaco_231/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://izhen.me/2009/04/24/usaco_231/" data-id="ck63p1kv8002hubjr49kn1bre" class="article-share-link">Share</a>
-      
-        <a href="https://izhen.me/2009/04/24/usaco_231/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pascal/">Pascal</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/String-Pattern-Match/">String Pattern Match</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Trie/">Trie</a></li></ul>
 
     </footer>
   </div>
