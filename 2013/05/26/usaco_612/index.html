@@ -6,7 +6,7 @@
   <title>USACO 6.1.2 Vans | Z.Y. ☯ Cosmos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="题目解答找规律。第一张图和第二张图其实已经暗示了这道题目的潜在规律。注意到从一个第一行的点横向出发再回到这个点只有从这个点下面的点回来。定义F[i]表示从前i列中第i列的第2个点到第1个点共有多少合法路径，根据这个定义F[n]即为所求。G[i]表示前i列中第i列的第1个点到第4个点共有多少路径。因此可以推出F[i] = F[i-1] + G[i-1] (画图找规律)。 下面我们仔细观察这两个方程的">
-<meta name="keywords" content="DP,C++,运算符重载,高精度">
+<meta name="keywords" content="C++,DP,运算符重载,高精度">
 <meta property="og:type" content="article">
 <meta property="og:title" content="USACO 6.1.2 Vans">
 <meta property="og:url" content="https://izhen.me/2013/05/26/usaco_612/index.html">
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2013/05/26/usaco_612/" data-id="ck6zxmcn9002we7jrqyvrn2tt" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2013/05/26/usaco_612/" data-id="ck7arsiap002vp7jrdku6oti1" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2013/05/26/usaco_612/#disqus_thread" class="article-comment-link">Comments</a>
       
