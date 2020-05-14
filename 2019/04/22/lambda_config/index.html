@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
   <title>Project lambda部署指南 | Z.Y. ☯ Cosmos</title>
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="/css/style.css">
   
 
-</head>
+</head></html>
 <body>
   <div id="container">
     <div id="wrap">
@@ -104,10 +104,10 @@
       
         <p>项目本身规模小、且没有足够的时间与人力去设计运维部分。这么小的项目却要做很多不必要的或者不合理的工作，实在惭愧。</p>
 <a id="more"></a>
-<h4 id="数据库设置"><a href="#数据库设置" class="headerlink" title="数据库设置"></a>数据库设置</h4><p>项目的数据库存储与项目本身的部署是分离，先装好 <a href="">PotgreSQL</a> 后，启动一个数据库，具体的步骤请参阅官方文档。</p>
+<h4 id="数据库设置"><a href="#数据库设置" class="headerlink" title="数据库设置"></a>数据库设置</h4><p>项目的数据库存储与项目本身的部署是分离，先装好 <a href>PotgreSQL</a> 后，启动一个数据库，具体的步骤请参阅官方文档。</p>
 <p>设置好后将用户名，密码以及端口号写入<code>Skeleton/Kernel/Internal/Model.hs</code>。</p>
 <h4 id="邮件订阅"><a href="#邮件订阅" class="headerlink" title="邮件订阅"></a>邮件订阅</h4><p>在<code>Skeleton/Kernel/Core/Mail.hs</code>里面设置好邮件发送端相关信息。</p>
-<h4 id="前端设定"><a href="#前端设定" class="headerlink" title="前端设定"></a>前端设定</h4><p>将 <a href="">ProLambda/Times-default-theme</a> 放入<code>static</code>文件夹。</p>
+<h4 id="前端设定"><a href="#前端设定" class="headerlink" title="前端设定"></a>前端设定</h4><p>将 <a href>ProLambda/Times-default-theme</a> 放入<code>static</code>文件夹。</p>
 <h4 id="两次启动"><a href="#两次启动" class="headerlink" title="两次启动"></a>两次启动</h4><ol>
 <li>第一次启动要在<code>Main.hs</code>中将以下注释放开，然后构建项目并运行：</li>
 </ol>
@@ -117,13 +117,13 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$stack build</span><br><span class="line">$stack exec proj</span><br></pre></td></tr></table></figure>
 <h5 id="DISQUS"><a href="#DISQUS" class="headerlink" title="DISQUS"></a>DISQUS</h5><p>需要在<code>main.html</code>中设定事先注册好的账户。</p>
-<h5 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h5><p>某些<code>Linux</code>的发行版，比如 <a href="">AWS</a> 上面的可能会缺库，可以自行安装：</p>
+<h5 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h5><p>某些<code>Linux</code>的发行版，比如 <a href>AWS</a> 上面的可能会缺库，可以自行安装：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$install postgresql-devel, zlib-devel</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2019/04/22/lambda_config/" data-id="ck8tko6vs001qhgjr0tpd0e5k" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2019/04/22/lambda_config/" data-id="cka6vqdrp001p79dxddunh1v7" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2019/04/22/lambda_config/#disqus_thread" class="article-comment-link">Comments</a>
       
