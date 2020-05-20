@@ -73,6 +73,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-consistentHash" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/15/consistentHash/" class="article-date">
+  <time datetime="2018-07-14T19:26:59.000Z" itemprop="datePublished">2018-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/15/consistentHash/">一致性哈希Java实现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在缓存服务的负载均衡领域，会遇到一种问题：考虑到我们可以通过哈希算法实现用户结点到服务结点的常数时间映射，但是如果服务器遇到上下线的问题，会使得原本的映射面临大范围的失效。比如用户A指向5号服务器，某个时刻5号服务器突然宕机，其他的服务器则需要替补5号服务的位置。此时我们使用的是<strong>直接</strong>映射方案，因此除了5号服务器，也包括替补服务器(可能是6号替补5号，这时原本6号的位置需要7号替补，以此类推)的全部缓存数据均需要更新。</p>
+<p>这就带来了不一致问题。<br>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/15/consistentHash/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2018/07/15/consistentHash/" data-id="ckaexoful001a7jjrah1fr991" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2018/07/15/consistentHash/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Consistent-Hash/">Consistent Hash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Skip-List/">Skip List</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Bipartite" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/13/Bipartite/" class="article-date">
@@ -108,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2018/07/13/Bipartite/" data-id="cka6vqdr7000h79dxnr4k0a1n" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2018/07/13/Bipartite/" data-id="ckaexofu7000h7jjr0us2plbi" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2018/07/13/Bipartite/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -154,7 +204,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2018/05/19/persona5/" data-id="cka6vqdrx002779dxx27hqxj0" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2018/05/19/persona5/" data-id="ckaexofv0002a7jjrsambrlgn" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2018/05/19/persona5/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -199,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2018/05/19/leetcode004/" data-id="cka6vqdrq001r79dxhy5rrr3w" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2018/05/19/leetcode004/" data-id="ckaexofut001t7jjrjhamg0ii" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2018/05/19/leetcode004/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -248,7 +298,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2018/02/22/cyberpunk/" data-id="cka6vqdri001979dxq8e548hz" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2018/02/22/cyberpunk/" data-id="ckaexoful001c7jjr7737aoqr" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2018/02/22/cyberpunk/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -297,7 +347,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/12/24/customdomainforblog/" data-id="cka6vqdri001879dxwjh3qrjl" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2017/12/24/customdomainforblog/" data-id="ckaexoful001b7jjr3r0w9pe5" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2017/12/24/customdomainforblog/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -346,7 +396,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/12/23/new3webbrowser/" data-id="cka6vqds2002k79dxo6fiiu5s" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2017/12/23/new3webbrowser/" data-id="ckaexofuw001z7jjrr2pxashu" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2017/12/23/new3webbrowser/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -395,7 +445,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/10/29/aws-intro/" data-id="cka6vqdrz002c79dx2o327gd1" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2017/10/29/aws-intro/" data-id="ckaexofuh00127jjrkz3can1b" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2017/10/29/aws-intro/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -445,7 +495,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/08/20/aws-lambda/" data-id="cka6vqdrf001279dxhkqupcxh" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2017/08/20/aws-lambda/" data-id="ckaexofui00137jjrfi6rrl1t" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2017/08/20/aws-lambda/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -475,7 +525,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/image/usaco.jpg" rel="gallery_cka6vqdro001n79dxwjjcflxc">
+      <a class="article-gallery-img fancybox" href="/image/usaco.jpg" rel="gallery_ckaexofug000y7jjrnhs48owv">
         <img src="/image/usaco.jpg" itemprop="image">
       </a>
     
@@ -504,70 +554,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/08/06/USACO-update/" data-id="cka6vqdro001n79dxwjjcflxc" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2017/08/06/USACO-update/" data-id="ckaexofug000y7jjrnhs48owv" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2017/08/06/USACO-update/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Complete-Search/">Complete Search</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/USACO/">USACO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/题目解答/">题目解答</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-bio" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/08/bio/" class="article-date">
-  <time datetime="2017-02-08T15:47:01.000Z" itemprop="datePublished">2017-02-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blog/">Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/08/bio/">DOS时代的游戏及其它</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>大概学龄前的时候在<a href="https://en.wikipedia.org/wiki/Windows_95" target="_blank" rel="noopener">Windows 95</a>上玩过几款DOS平台的游戏，印象深刻的有这几部：</p>
-<ul>
-<li>游戏的开头有个开场动画，男主在奔跑，脑海中想着一个女孩，跑着跑着远方升起了蘑菇云，接下来就是泪奔了，然后男主驾驶着飞机开始了复仇之旅，<a href="https://en.wikipedia.org/wiki/Raiden_(video_game" target="_blank" rel="noopener">雷电</a>风格的游戏</li>
-<li>一款横版过关的射击游戏，背景图案是浩瀚的宇宙</li>
-<li><a href="https://3drealms.com/catalog/bio-menace_42/" target="_blank" rel="noopener">Bio</a>，在我去寻找这款游戏之前，只记得名字的前3个字母</li>
-<li><a href="https://en.wikipedia.org/wiki/Wolfenstein_3D" target="_blank" rel="noopener">Wolfenstein 3D</a></li>
-<li><a href="https://3drealms.com/catalog/duke-nukem-1_24/" target="_blank" rel="noopener">Duke Nukem</a></li>
-</ul>
-<p>直到后来才知道很多游戏是始祖级别的，但依然是玩过了就过了，唯一耿耿于怀的是Bio的Part 1的结尾出现的蛤蟆是不是博士，谁把他变成蛤蟆的，过了这么多年的今天真相终于大白。</p>
-<p><img src="https://static.3drealms.com/media/screenshots/63247f5b68c9409382d577e7b66539be.jpg" alt="Bio的第一关"></p>
-        
-          <p class="article-more-link">
-            <a href="/2017/02/08/bio/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://izhen.me/2017/02/08/bio/" data-id="cka6vqdrg001479dxrai4aghv" class="article-share-link">Share</a>
-      
-        <a href="https://izhen.me/2017/02/08/bio/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bio-Menace/">Bio Menace</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cave-Story/">Cave Story+</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Game/">Game</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KKrieger/">KKrieger</a></li></ul>
 
     </footer>
   </div>

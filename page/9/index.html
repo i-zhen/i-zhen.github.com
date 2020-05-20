@@ -73,6 +73,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-usaco_335" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/04/18/usaco_335/" class="article-date">
+  <time datetime="2010-04-18T15:39:27.000Z" itemprop="datePublished">2010-04-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/04/18/usaco_335/">USACO 3.3.5 Game1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>首次遇到博弈问题，分析问题给定一个序列{num1,num2,num3……numN}两个人分别从左右以最佳策略取值，找到第一个人的可能最大值。那么我们把问题划分得小一点得知，当前的最佳策略相当于分别选择左右两边的数字加上剩下的决策序列中的最大的。因此具备最优子结构，可以拆分为小问题解决。又因为只有两个人所以知道了一个人的状态就一定知道另一个人的。用DP[i][j]表示区间 [i,j]第一个人的最佳策略。边界条件 DP[i][i]=num[i];状态转移方程:DP[i][j]=MAX{num[i]+sum[i+1][j]-DP[i+1][j],num[j]+sum[i][j-1]-DP[i][j-1]}; 根据分析不难理解本方程。不过需要从小的区间往大的区间计算。</p>
+<p>关于原理：因为当第一个人选择最左边时从(左+1)向后它就作为后手了，而第二个人作为先手，因此从(左+1)向后第二个人是先手，他此时的决策相当于第一个人，根据方程的意义，第一个人在余下序列的最值就是从(左+1)向后的总合，减去第二个人作为先手的最优决策。(^o^)</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/04/18/usaco_335/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="ckaexofv9002s7jjrwlicj8gs" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/04/18/usaco_335/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Game-Theory/">Game Theory</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-usaco_432" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2010/04/06/usaco_432/" class="article-date">
@@ -109,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="cka6vqds9002y79dx0k4c18ia" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="ckaexofvb002w7jjrs9cxevj1" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/06/usaco_432/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -163,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="cka6vqdrt001z79dxwhvo68se" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="ckaexofux00227jjrs69zyelc" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/03/01/noi2003/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -213,7 +263,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="cka6vqds7002s79dxjnn13dp9" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="ckaexofv9002t7jjr3n8crca0" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/25/usaco_341/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -264,7 +314,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="cka6vqdry002b79dx7bznqeek" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="ckaexofv2002e7jjrv629sfse" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/23/poj2299/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -315,7 +365,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="cka6vqdrz002d79dxhfre4pgs" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="ckaexofv2002f7jjrl4q627u4" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/22/poj3368/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -366,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="cka6vqdry002a79dx5k7vh491" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="ckaexofv1002d7jjr0rwfg07x" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/21/poj2104/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -418,7 +468,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="cka6vqdrt001y79dx92i94onb" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="ckaexofuw00217jjrtfb25d9e" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/15/noi2000/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -467,7 +517,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="cka6vqdru002079dxwhrlpl7a" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="ckaexofuy00237jjrq3v8868f" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/08/noi2004/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -516,61 +566,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="cka6vqds7002t79dxop2nvyeb" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="ckaexofva002u7jjrhk2mn7s4" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/06/usaco_342/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ad-Hoc/">Ad Hoc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tree/">Tree</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-poj3667" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2010/02/05/poj3667/" class="article-date">
-  <time datetime="2010-02-04T21:38:37.000Z" itemprop="datePublished">2010-02-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Solve/">Solve</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2010/02/05/poj3667/">POJ3667线段树</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>裸的线段树，线段树能解决的问题很多，这道题目是非常典型的线段染色问题。有三种状态，无色（空），满色（有人），杂色。主要考察的也就是实现线段树的惰性，即懒操作。修改颜色时不是一改到底的，在适当粒度的区间做好标记，当出现更细粒度（小于某个区间）的操作时再下放。例如：区间[1,10]标记为客满，同时区间[1,2]标记为空是可以在某些时刻共存的，想想为什么。</p>
-        
-          <p class="article-more-link">
-            <a href="/2010/02/05/poj3667/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/05/poj3667/" data-id="cka6vqdrz002e79dxre7vaz32" class="article-share-link">Share</a>
-      
-        <a href="https://izhen.me/2010/02/05/poj3667/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/染色/">染色</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
 
     </footer>
   </div>
