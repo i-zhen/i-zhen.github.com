@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Z.Y. ☯ Cosmos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Z.Y. ☯ Cosmos">
+<meta property="og:url" content="https://izhen.me/page/9/index.html">
+<meta property="og:site_name" content="Z.Y. ☯ Cosmos">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Z.Y. ☯ Cosmos">
+<meta name="twitter:creator" content="@soczhenyi">
+<link rel="publisher" href="107518308584039100000">
+  
+    <link rel="alternative" href="/atom.xml" title="Z.Y. ☯ Cosmos" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head></html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Z.Y. ☯ Cosmos</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Powered by Disqus, scientific surfing for access</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="http://ec2-13-231-164-97.ap-northeast-1.compute.amazonaws.com">λ</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/lab">About</a>
+        
+          <a class="main-nav-link" href="https://resume.izhen.me">Resume</a>
+        
+          <a class="main-nav-link" href="https://github.com/i-zhen">Github</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://izhen.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-usaco_335" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/04/18/usaco_335/" class="article-date">
+  <time datetime="2010-04-18T15:39:27.000Z" itemprop="datePublished">2010-04-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/04/18/usaco_335/">USACO 3.3.5 Game1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>首次遇到博弈问题，分析问题给定一个序列{num1,num2,num3……numN}两个人分别从左右以最佳策略取值，找到第一个人的可能最大值。那么我们把问题划分得小一点得知，当前的最佳策略相当于分别选择左右两边的数字加上剩下的决策序列中的最大的。因此具备最优子结构，可以拆分为小问题解决。又因为只有两个人所以知道了一个人的状态就一定知道另一个人的。用DP[i][j]表示区间 [i,j]第一个人的最佳策略。边界条件 DP[i][i]=num[i];状态转移方程:DP[i][j]=MAX{num[i]+sum[i+1][j]-DP[i+1][j],num[j]+sum[i][j-1]-DP[i][j-1]}; 根据分析不难理解本方程。不过需要从小的区间往大的区间计算。</p>
+<p>关于原理：因为当第一个人选择最左边时从(左+1)向后它就作为后手了，而第二个人作为先手，因此从(左+1)向后第二个人是先手，他此时的决策相当于第一个人，根据方程的意义，第一个人在余下序列的最值就是从(左+1)向后的总合，减去第二个人作为先手的最优决策。(^o^)</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/04/18/usaco_335/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="ckaexvjjf002rc8jr0x42hmex" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/04/18/usaco_335/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Game-Theory/">Game Theory</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-usaco_432" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/04/06/usaco_432/" class="article-date">
+  <time datetime="2010-04-06T15:39:27.000Z" itemprop="datePublished">2010-04-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/04/06/usaco_432/">USACO 4.3.2 Prime3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这是一个比较优秀的枚举搜索题目。所用策略：构造 + 二分 + 枚举 + 剪枝。</p>
+<p>其实题目本身不难，我的方法是：先构造出所有要用到的素数，然后在这个已经压缩的状态空间中枚举。因为素数构造好了，所以检索一个数字是否是素数时可以直接二分。搜索时先要搜对角线，然后有两个顺序去继续搜索： A，由内到外； B，由外到内。事实上对于这道题目，可以进行最大限度的剪枝才是好的顺序，所以综合考虑 B是更好的选择。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/04/06/usaco_432/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="ckaexvjjg002uc8jrbommvpzs" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/04/06/usaco_432/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DFS/">DFS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-noi2003" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/03/01/noi2003/" class="article-date">
+  <time datetime="2010-02-28T21:38:37.000Z" itemprop="datePublished">2010-03-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/03/01/noi2003/">NOI2003木棒游戏</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>我是使用朴素的方法做的(高深的我不会)，首先找到火柴棒间的对应关系，比如移动一根火柴可以将8变为0，等等，然后分为两种情况枚举：</p>
+<ol>
+<li>本身变动</li>
+<li>两个数字一起变动</li>
+</ol>
+<p>当然这样枚举必定要TLE，所以先把整个式子提取出来(所以程序很长 ,其实后来我也有点看不懂了。。。)，这样变动数字进行计算的时候就不用每次把整个式子都算了</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/03/01/noi2003/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="ckaexvjj20021c8jrb9i4o1v9" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/03/01/noi2003/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码题/">代码题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-usaco_341" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/25/usaco_341/" class="article-date">
+  <time datetime="2010-02-25T15:39:27.000Z" itemprop="datePublished">2010-02-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/25/usaco_341/">USACO 3.4.1 Fence</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>第一个计算几何问题，计算几何问题必须要“踏踏实实”的来，但是也有优化。对于本题目，我使用的是2分法。(我只想到了这个方法，听说还有强大的类似线段树的方法)。首先第一问：使用叉积判断任意两条线段是否绝对相交，若有则输出“NOFENCE”并结束。重点是第二问。观察下图。我们可以很清楚的知道，如果一条线段可以被观察到，他的视野一定不为0，因此，我们只要先找到待观察线段的中点，并与观察点连线就能得到一条新的线段(中位线)。并用新的线段与其它所有线段进行绝对相交判断。同时还要考虑非绝对相交，被点挡住的情况。如果有中位线满足不与所有点相交，那么他一定可以被看到。否则2分。边界条件是两个端点挨在一起了，说明没有满足。这时就要考虑控制精度了。一旦精度过高就会超时。反之就会漏解。(0.005就不错(^o^))具体的实现请看程序。</p>
+<p>提一句输出：我们按顺序2分，这样在输出序列里的就是有序的，只是当最后的结点坐标一样时要按输入文件的顺序输出。而只有当第(N-1)与第N个同时要输出时才会不满足(至于为什么不多作解释)。这时先输出N，再输出(N-1)</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/25/usaco_341/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="ckaexvjjf002sc8jr6f60gfyw" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/25/usaco_341/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算几何/">计算几何</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-poj2299" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/23/poj2299/" class="article-date">
+  <time datetime="2010-02-22T21:38:37.000Z" itemprop="datePublished">2010-02-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/23/poj2299/">POJ2299树状数组</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>求逆序对，这类问题解法很多，首先想想为何不直接快排然后统计交换次数。</p>
+<p>这里介绍一种树状数组的解法：因为数字本身很大，我们要进行一次离散化。离散化就是每个只要保存他们的相对位置即可，这样能极大压缩树状数组的空间从而避免MLE。<br>例如：2 4 1 10 可以被离散化为 2 3 1 4。</p>
+<p>先对一个镜像数列排序，之后从有序的数列中二分查找每个数组的位置，用位置替换原本的值即可，离散化时间复杂度：O(NlogN)。<br>之后顺理成章的用树状数组统计即可。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/23/poj2299/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="ckaexvjj7002dc8jrxz0e1vq5" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/23/poj2299/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树状数组/">树状数组</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-poj3368" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/22/poj3368/" class="article-date">
+  <time datetime="2010-02-21T21:38:37.000Z" itemprop="datePublished">2010-02-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/22/poj3368/">POJ3368区间最值-ST算法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这是一道可以使用线段树轻松解决的问题，只要维护总最长区间，从左边开始和右边开始的最长区间三个域即可。</p>
+<p>但是，还有更巧妙的RMQ解法，假如我们只要[1,n]的最长区间，很显然只要预处理一下，把连续的值的频率算出来，就可以很简单的RMQ了，但问题是：如果区间断开了，那么RMQ是否就失效了?对于断开的区间的整体来说必定是这样，但是其中的完整的子段依然保留着RMQ的最优性。</p>
+<p>例如：-1 -1 1 1 1 1 3 10 10 10，预处理后：1 2 1 2 3 4 1 1 2 3，如果查询[5,10]直接ST会算出4，但是应该是3，再仔细观察，因为数列非递减，所以只有左边断开才会影响结果，因此我们只要特殊处理一下左边的连续值即可。然后对剩下的使用ST解决。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/22/poj3368/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="ckaexvjj8002ec8jrjrah00y1" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/22/poj3368/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RMQ问题/">RMQ问题</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ST算法/">ST算法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-poj2104" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/21/poj2104/" class="article-date">
+  <time datetime="2010-02-20T21:38:37.000Z" itemprop="datePublished">2010-02-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/21/poj2104/">POJ2104归并树</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>使用线段树的划分结构维护归并排序，线段树是虚的，不需要建立出来。查找时，大体分为三次：首先二分总区间的中值 -&gt; 接着使用已经建好的归并树二分中值在待查区间的排位(需要两个小的二分组成) -&gt; 若与待查排位一致就输出，否则总区间折半继续上述步骤直到找到。</p>
+<p>本题目实现以后，我从一个神人的Blog发现了使用 STL 优化的方法：查待查区间的排位可以用STL。(冬令营上说可以使用)</p>
+<p>我原本的程序：长61Lines | 运行时间::3.4s;<br>使用STL后的程序：长56Lines | 运行时间::2.4s; &lt;– OTL</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/21/poj2104/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="ckaexvjj7002cc8jrfnf1vm6d" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/21/poj2104/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POJ/">POJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/归并树/">归并树</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-noi2000" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/15/noi2000/" class="article-date">
+  <time datetime="2010-02-14T21:38:37.000Z" itemprop="datePublished">2010-02-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/15/noi2000/">NOI2000青蛙过河</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>这道<a href="https://www.luogu.org/problemnew/show/P1244" target="_blank" rel="noopener">题目</a>是一道好题，因为可以从多个角度出发考虑，途径很多。首先，乍一看题貌似是Hanoi塔的模式，只不过增加了特定的限制(不可以向回走)，先分析一个例子：石墩有2个，荷叶3个的情况。这种情况可以有至多16只青蛙过河。首先有4只先到一号石墩，接着另有4个号码较大的到达2号墩，这是很容易做到的，然后让1号墩上的3个小的跳到荷叶上，1号墩剩下那只直接跳到2号，3个荷叶上的再跳到2号。此时2号墩已经饱和了(推一下即可知道)，而1号和荷叶是空的让其饱和，则可再次有7只青蛙，此时已经有15只青蛙。左岸的第16只可以直接跳到右岸，而且可以发现怎样跳过来还可以怎样跳回去，只不过我们不跳到左岸而是右岸，这是对称的。因此可以有16只。</p>
+<p><img src="/image/idealnova/frog.jpg" alt="NOI 2000"></p>
+<p>事实上，我们仔细分析可以发现，只有荷叶的话，那么最多只能有荷叶数加1只青蛙可以过河，因为过河顺序是单向传递的。所以我们如果想使过河数最大可以令青蛙在河中央停留的只数达到最多，这样只有荷叶的话必然是荷叶数加1只青蛙可以渡过。但是存在石墩就不一样了。因为石墩上可以有多只编号严格递减的青蛙。首先荷叶可以作为跳板，并由这些跳板使多只青蛙到达河中的石墩，并且尽量可以积累的多一些。而且河中的石墩是无所谓顺序的，所以我们可以这样来看待问题：</p>
+<p>把左岸，河中央，右岸分为3个阶段。把河中的石墩当作目的地，用样例来说：根据前面的分析，1号石墩可以有4只青蛙，2号同样可以有4只，此时1、2号石墩的青蛙序号严格递减，所以1号的青蛙又可以看作右岸借助荷叶到达2号石墩。2号就有8只。此时因为2号石墩的青蛙数的总数比荷叶石墩的总数还多，所以2号石墩已经饱和。1号已空，再重复之前的工作……如此反复进行：i号石墩总可以包含(i-1)号，即以1号石墩的青蛙作为单位青蛙数s，会有s，2 <em> s，4 </em> s……只，所以总共会有2^h*(k+1)个青蛙可以过河。得到通项公式。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/15/noi2000/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="ckaexvjj20020c8jr3jwxpusd" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/15/noi2000/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/递推/">递推</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-noi2004" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/08/noi2004/" class="article-date">
+  <time datetime="2010-02-07T21:38:37.000Z" itemprop="datePublished">2010-02-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/08/noi2004/">NOI2007项链工厂</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>(这道题目好像很流行 (^o^))。分析题目，因为所有操作均是在区间内完成的，因此可以使用线段树，保证维护的摊还时间限定在O(logn)以内，但是本题的难点不在线段树本身，而是对于Flip和 Rotate的维护，这是其一，其二就是如何合并两棵树。针对这个问题，通过分析我们知道，珠子之间的相对位置固定，这样就可以使用偏移量来记录，再用bool的标志记录是否偏转，具体的计算请看我的程序的hash()函数，这样就解决了这两个问题。而子树合并，则要再维护rcol，lcol两个分别代表左右端点的域。这样的好处，相信不用我再说了。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/08/noi2004/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="ckaexvjj30022c8jrc7gfuanl" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/08/noi2004/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-usaco_342" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/02/06/usaco_342/" class="article-date">
+  <time datetime="2010-02-06T15:39:27.000Z" itemprop="datePublished">2010-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/02/06/usaco_342/">USACO 3.4.2 Heritage</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>分治策略：首先根据常识凡是中序+前序，中序+后序均可确定唯一二叉树。前序+后序不可确定。因此我们根据中序+前序先构造出二叉树，然后输出即可。构造方法是：因为前序遍历的第一个一定是根，那么接着找到根在中序遍历的位置。在中序遍历中左边的就是左子树。右边的就是右子树。然后下放左右子树和相应的前序遍历接着做，直到没有左右子树为止。(如图)</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/02/06/usaco_342/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="ckaexvjjg002tc8jrnsek7nnk" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/02/06/usaco_342/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ad-Hoc/">Ad Hoc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tree/">Tree</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/8/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/10/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Copyright &copy; 2009 - 2020 Zhen Yi<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <br>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span class="site-uv">用户访问: <span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+      <span class="site-pv">本站访问: <span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="http://ec2-13-231-164-97.ap-northeast-1.compute.amazonaws.com" class="mobile-nav-link">λ</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/lab" class="mobile-nav-link">About</a>
+  
+    <a href="https://resume.izhen.me" class="mobile-nav-link">Resume</a>
+  
+    <a href="https://github.com/i-zhen" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'izhen';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
