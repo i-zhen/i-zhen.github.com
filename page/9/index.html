@@ -73,6 +73,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-NOI2006" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/04/25/NOI2006/" class="article-date">
+  <time datetime="2010-04-24T21:39:37.000Z" itemprop="datePublished">2010-04-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/04/25/NOI2006/">NOI2006最大获利-最大权闭合子图</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>首先按照<a href="https://www.luogu.org/problemnew/show/P4174" target="_blank" rel="noopener">题目</a>要求先建立二分图：左边是用户点，右边是通讯站，并给他们附上权值为正无穷。然后右边的点向超级汇连边，权值为中转站的花费。超级源向左边的点连边，权值是获利。然后求出最大流。这个最大流的含义是：因为最大流 = 最小割。中间部分的边容量是正无穷不会被割开，而只会割开源与汇的边，也就是（不打算纳入获利的值 + 建一部分通讯站的费用），因为是最小割，所以保证这样的耗费最小，也就是说这是我们不需要的值。因此最终结果是：可获利的总权值 -最大流。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/04/25/NOI2006/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/04/25/NOI2006/" data-id="ckixb41rh000lpidx0qpebrz5" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/04/25/NOI2006/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Graph/">Graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NOI/">NOI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NetFlow/">NetFlow</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/费用流/">费用流</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-usaco_335" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2010/04/18/usaco_335/" class="article-date">
@@ -109,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="ckagi0p0n002qhujrwvje0gmf" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="ckixb41sk002tpidxodejtuh3" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/18/usaco_335/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -159,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="ckagi0p0o002thujrophw11kb" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="ckixb41sl002wpidxymwjjt02" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/06/usaco_432/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -213,7 +262,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="ckagi0p0a0020hujrcfk6zlde" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="ckixb41s80023pidx7nvdfndf" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/03/01/noi2003/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -263,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="ckagi0p0n002rhujrm5y7ud1t" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="ckixb41sk002upidx7kekvf1x" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/25/usaco_341/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -314,7 +363,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="ckagi0p0g002chujrjjoiyw4f" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="ckixb41sc002fpidxlzgajf99" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/23/poj2299/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -365,7 +414,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="ckagi0p0g002dhujrizutqxxj" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="ckixb41sd002gpidxsinsn4p7" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/22/poj3368/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -416,7 +465,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="ckagi0p0f002bhujrukchxljq" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="ckixb41sc002dpidxqmn5nfgj" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/21/poj2104/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -468,7 +517,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="ckagi0p0a001zhujrwgftxwfd" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="ckixb41s70022pidx6mtuuk2y" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/15/noi2000/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -517,61 +566,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="ckagi0p0b0021hujrqxi6hs6c" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="ckixb41s80024pidxgqm10rai" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/08/noi2004/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-usaco_342" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2010/02/06/usaco_342/" class="article-date">
-  <time datetime="2010-02-06T15:39:27.000Z" itemprop="datePublished">2010-02-06</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Solve/">Solve</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2010/02/06/usaco_342/">USACO 3.4.2 Heritage</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>分治策略：首先根据常识凡是中序+前序，中序+后序均可确定唯一二叉树。前序+后序不可确定。因此我们根据中序+前序先构造出二叉树，然后输出即可。构造方法是：因为前序遍历的第一个一定是根，那么接着找到根在中序遍历的位置。在中序遍历中左边的就是左子树。右边的就是右子树。然后下放左右子树和相应的前序遍历接着做，直到没有左右子树为止。(如图)</p>
-        
-          <p class="article-more-link">
-            <a href="/2010/02/06/usaco_342/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="ckagi0p0o002shujryg0s03af" class="article-share-link">Share</a>
-      
-        <a href="https://izhen.me/2010/02/06/usaco_342/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ad-Hoc/">Ad Hoc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tree/">Tree</a></li></ul>
 
     </footer>
   </div>
