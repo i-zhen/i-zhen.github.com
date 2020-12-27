@@ -6,7 +6,7 @@
   <title>USACO 3.4.2 Heritage | Z.Y. ☯ Cosmos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="题目解答分治策略：首先根据常识凡是中序+前序，中序+后序均可确定唯一二叉树。前序+后序不可确定。因此我们根据中序+前序先构造出二叉树，然后输出即可。构造方法是：因为前序遍历的第一个一定是根，那么接着找到根在中序遍历的位置。在中序遍历中左边的就是左子树。右边的就是右子树。然后下放左右子树和相应的前序遍历接着做，直到没有左右子树为止。(如图)">
-<meta name="keywords" content="Ad Hoc,C++,Tree">
+<meta name="keywords" content="Tree,C++,Ad Hoc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="USACO 3.4.2 Heritage">
 <meta property="og:url" content="https://izhen.me/2010/02/06/usaco_342/index.html">
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="ckj70y97e0043eldx6o0jc9ct" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/06/usaco_342/" data-id="ckj72bn6m002t51dx6avcwqya" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/06/usaco_342/#disqus_thread" class="article-comment-link">Comments</a>
       
