@@ -334,13 +334,13 @@
     
       <category term="小学" scheme="https://izhen.me/tags/%E5%B0%8F%E5%AD%A6/"/>
     
-      <category term="游戏" scheme="https://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
-    
       <category term="兴趣小组" scheme="https://izhen.me/tags/%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84/"/>
     
       <category term="中学" scheme="https://izhen.me/tags/%E4%B8%AD%E5%AD%A6/"/>
     
       <category term="大学" scheme="https://izhen.me/tags/%E5%A4%A7%E5%AD%A6/"/>
+    
+      <category term="游戏" scheme="https://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -365,6 +365,8 @@
     
       <category term="C++" scheme="https://izhen.me/tags/C/"/>
     
+      <category term="游戏" scheme="https://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
+    
       <category term="Basic" scheme="https://izhen.me/tags/Basic/"/>
     
       <category term="Pascal" scheme="https://izhen.me/tags/Pascal/"/>
@@ -372,8 +374,6 @@
       <category term="物理" scheme="https://izhen.me/tags/%E7%89%A9%E7%90%86/"/>
     
       <category term="VB" scheme="https://izhen.me/tags/VB/"/>
-    
-      <category term="游戏" scheme="https://izhen.me/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -1626,9 +1626,9 @@
       <category term="Think" scheme="https://izhen.me/categories/Think/"/>
     
     
-      <category term="logic" scheme="https://izhen.me/tags/logic/"/>
-    
       <category term="math" scheme="https://izhen.me/tags/math/"/>
+    
+      <category term="logic" scheme="https://izhen.me/tags/logic/"/>
     
       <category term="complete search" scheme="https://izhen.me/tags/complete-search/"/>
     
@@ -1711,9 +1711,9 @@
       <category term="Blog" scheme="https://izhen.me/categories/Blog/"/>
     
     
-      <category term="TAOMP" scheme="https://izhen.me/tags/TAOMP/"/>
-    
       <category term="cache" scheme="https://izhen.me/tags/cache/"/>
+    
+      <category term="TAOMP" scheme="https://izhen.me/tags/TAOMP/"/>
     
   </entry>
   
