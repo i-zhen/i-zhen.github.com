@@ -877,9 +877,9 @@
       <category term="Portfolio" scheme="https://izhen.me/categories/Portfolio/"/>
     
     
-      <category term="Haskell" scheme="https://izhen.me/tags/Haskell/"/>
-    
       <category term="open source" scheme="https://izhen.me/tags/open-source/"/>
+    
+      <category term="Haskell" scheme="https://izhen.me/tags/Haskell/"/>
     
       <category term="λ" scheme="https://izhen.me/tags/%CE%BB/"/>
     
@@ -1626,9 +1626,9 @@
       <category term="Think" scheme="https://izhen.me/categories/Think/"/>
     
     
-      <category term="math" scheme="https://izhen.me/tags/math/"/>
-    
       <category term="logic" scheme="https://izhen.me/tags/logic/"/>
+    
+      <category term="math" scheme="https://izhen.me/tags/math/"/>
     
       <category term="complete search" scheme="https://izhen.me/tags/complete-search/"/>
     
@@ -1686,9 +1686,9 @@
       <category term="Solve" scheme="https://izhen.me/categories/Solve/"/>
     
     
-      <category term="logic" scheme="https://izhen.me/tags/logic/"/>
-    
       <category term="TAOMP" scheme="https://izhen.me/tags/TAOMP/"/>
+    
+      <category term="logic" scheme="https://izhen.me/tags/logic/"/>
     
   </entry>
   
