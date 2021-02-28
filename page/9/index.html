@@ -73,6 +73,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-NOI2008" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/04/27/NOI2008/" class="article-date">
+  <time datetime="2010-04-26T21:39:37.000Z" itemprop="datePublished">2010-04-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Solve/">Solve</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/04/27/NOI2008/">NOI2008志愿者招募</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p><a href="https://www.luogu.org/problemnew/show/P3980" target="_blank" rel="noopener">题目</a>可以使用费用流建模 (费用流得实现细节就不说了 )，下面是一个常用的建模方式：首先按照天数从源到汇依次建立 S-&gt;1-&gt;2……N-&gt;N+1-&gt;T。也就是多加入一个点。他们的费用均为0，如图所示，第N天的流量就是 (MAX-第 N天的需求量 )。然后如果有一种雇员从 (x到 y)可以服务，那么连接 (x到 y+1),流量是 MAX,费用为雇佣花费。这样建模的大致思路大家应该已经明白：按照时间发展顺序，顺流而下。当我们选用一个雇员时，若覆盖 [x,y]天，那么自然就是连边 [x,y+1]只有这样才能保证当前的流量可以允许这些天都得到服务。那么为什么对呢？首先最大流一定是 MAX.因为这是最小割，而任何割集都不会小于这个割，所以就拿第一天来说，如果第一天最后求得的流量恰好是： (MAX-N[1])，一定有N[1] 的流量通过别的途径走了，而且对于第一天这个节点的最大流不可能超过 (MAX-N[1]),也就是说别的途径至少会有 N[1]个流量，而别的流量就是延伸出的包含费用的流，就是雇佣花费。也就符合了题目要求：第 1天的雇佣下限是 N[1].由此限制流量来满足题目要求。这样的方法利用的是补集的思想。</p>
+        
+          <p class="article-more-link">
+            <a href="/2010/04/27/NOI2008/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://izhen.me/2010/04/27/NOI2008/" data-id="cklozarfv000liddxszcwi3bq" class="article-share-link">Share</a>
+      
+        <a href="https://izhen.me/2010/04/27/NOI2008/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Graph/">Graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NOI/">NOI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NetFlow/">NetFlow</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/费用流/">费用流</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-NOI2006" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2010/04/25/NOI2006/" class="article-date">
@@ -108,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/25/NOI2006/" data-id="ckk7xy25v000kundx5k1omoyp" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/25/NOI2006/" data-id="cklozarfv000kiddxrfv4lgnr" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/25/NOI2006/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -158,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="ckk7xy26x002sundxh8v454f1" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/18/usaco_335/" data-id="cklozargt002siddxtqynz3rj" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/18/usaco_335/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -208,7 +257,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="ckk7xy26y002uundxvrr8fa88" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/04/06/usaco_432/" data-id="cklozargv002viddx5iukbgti" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/04/06/usaco_432/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -262,7 +311,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="ckk7xy26k0022undxarw9ozv5" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/03/01/noi2003/" data-id="cklozargi0022iddxvhdy92ep" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/03/01/noi2003/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -312,7 +361,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="ckk7xy26y002tundxz6h938ne" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/25/usaco_341/" data-id="cklozargu002tiddxnbc4ffyl" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/25/usaco_341/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -363,7 +412,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="ckk7xy26p002dundxwfma03to" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/23/poj2299/" data-id="cklozargn002eiddxab1bh4ho" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/23/poj2299/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -414,7 +463,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="ckk7xy26q002gundx35gfjjzt" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/22/poj3368/" data-id="cklozargn002fiddx7e1u3nxy" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/22/poj3368/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -465,7 +514,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="ckk7xy26q002fundxs9gpeuxg" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/21/poj2104/" data-id="cklozargm002diddxfnf840wt" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/21/poj2104/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -517,61 +566,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="ckk7xy26j0020undxxjvugfzj" class="article-share-link">Share</a>
+      <a data-url="https://izhen.me/2010/02/15/noi2000/" data-id="cklozargh0021iddxis87nlof" class="article-share-link">Share</a>
       
         <a href="https://izhen.me/2010/02/15/noi2000/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/递推/">递推</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-noi2004" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2010/02/08/noi2004/" class="article-date">
-  <time datetime="2010-02-07T21:38:37.000Z" itemprop="datePublished">2010-02-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Solve/">Solve</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2010/02/08/noi2004/">NOI2007项链工厂</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="题目解答"><a href="#题目解答" class="headerlink" title="题目解答"></a>题目解答</h4><p>(这道题目好像很流行 (^o^))。分析题目，因为所有操作均是在区间内完成的，因此可以使用线段树，保证维护的摊还时间限定在O(logn)以内，但是本题的难点不在线段树本身，而是对于Flip和 Rotate的维护，这是其一，其二就是如何合并两棵树。针对这个问题，通过分析我们知道，珠子之间的相对位置固定，这样就可以使用偏移量来记录，再用bool的标志记录是否偏转，具体的计算请看我的程序的hash()函数，这样就解决了这两个问题。而子树合并，则要再维护rcol，lcol两个分别代表左右端点的域。这样的好处，相信不用我再说了。</p>
-        
-          <p class="article-more-link">
-            <a href="/2010/02/08/noi2004/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://izhen.me/2010/02/08/noi2004/" data-id="ckk7xy26k0023undxvje67ecs" class="article-share-link">Share</a>
-      
-        <a href="https://izhen.me/2010/02/08/noi2004/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
 
     </footer>
   </div>
